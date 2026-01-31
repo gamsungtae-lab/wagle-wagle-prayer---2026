@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="와글와글 기도회">
+    <meta property="og:description" content="함께 모여 기도하는 기쁨! 와글와글 기도회에 초대합니다.">
+    <meta property="og:image" content="./thumb.jpg"> <title>와글와글 기도회</title>
+    
+    <style>
+        /* 스타일 정의 (디자인) */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #f0f0f0; } /* 배경색 */
+        
+        .container {
+            max-width: 600px; /* 모바일 최적화 너비 */
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding-bottom: 100px; /* 버튼 공간 확보 */
+        }
+
+        .content-img {
+            width: 100%;
+            display: block; /* 이미지 사이 틈 제거 */
+            border: 0;
+        }
+
+        /* 하단 플로팅 버튼 영역 */
+        .floating-btn-wrapper {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            /* 버튼 위로 자연스러운 그라데이션 배경 */
+            background: linear-gradient(to top, rgba(255,255,255,1) 40%, rgba(255,255,255,0)); 
+            z-index: 1000;
+        }
+
+        /* 버튼 모양 */
+        .cta-button {
+            /* [색상 추천] 기도회 분위기에 맞춰 변경 가능 */
+            background-color: #FF6B00; /* 예: 활기찬 주황색 */
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 0;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            width: 90%; /* 버튼 가로 넓이 */
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        .cta-button:active { transform: scale(0.96); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="./01.jpg" alt="와글와글 기도회 안내" class="content-img">
+        <img src="./02.jpg" alt="와글와글 기도회 안내" class="content-img">
+        
+        </div>
+
+    <div class="floating-btn-wrapper">
+        <a href="https://us06web.zoom.us/j/2631426080?pwd=m0ElaPakvcWYPUvY58KURodnAk42sG.1" class="cta-button" target="_blank">
+            기도회 입장하기
+        </a>
+    </div>
+
+</body>
+</html>
