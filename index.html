@@ -6,18 +6,20 @@
     
     <meta property="og:title" content="와글와글 기도회">
     <meta property="og:description" content="함께 모여 기도하는 기쁨! 와글와글 기도회에 초대합니다.">
-    <meta property="og:image" content="./thumb.jpg"> <title>와글와글 기도회</title>
+    <meta property="og:image" content="./thumb.jpg"> 
+    <title>와글와글 기도회</title>
     
     <style>
         /* 스타일 정의 (디자인) */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #f0f0f0; } /* 배경색 */
+        body { background-color: #f0f0f0; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; } 
         
         .container {
             max-width: 600px; /* 모바일 최적화 너비 */
             margin: 0 auto;
             background-color: #ffffff;
-            padding-bottom: 100px; /* 버튼 공간 확보 */
+            padding-bottom: 50px; /* 하단 여백 */
+            min-height: 100vh;
         }
 
         .content-img {
@@ -26,37 +28,50 @@
             border: 0;
         }
 
-        /* 하단 플로팅 버튼 영역 */
-        .floating-btn-wrapper {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 15px;
-            /* 버튼 위로 자연스러운 그라데이션 배경 */
-            background: linear-gradient(to top, rgba(255,255,255,1) 40%, rgba(255,255,255,0)); 
-            z-index: 1000;
-        }
-
-        /* 버튼 모양 */
-        .cta-button {
-            /* [색상 추천] 기도회 분위기에 맞춰 변경 가능 */
-            background-color: #FF6B00; /* 예: 활기찬 주황색 */
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 15px 0;
-            border-radius: 50px;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            width: 90%; /* 버튼 가로 넓이 */
-            max-width: 500px;
+        /* 교구별 링크 섹션 스타일 */
+        .link-section {
+            padding: 30px 20px;
+            background-color: #fff;
             text-align: center;
         }
+
+        .section-title {
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* 버튼 그리드 레이아웃 (2열 배치) */
+        .link-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 1:1 비율로 2개씩 배치 */
+            gap: 12px; /* 버튼 사이 간격 */
+        }
+
+        /* 개별 버튼 디자인 */
+        .district-btn {
+            display: block;
+            background-color: #FF6B00; /* 활기찬 주황색 */
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.1s ease, background-color 0.2s;
+        }
+
+        .district-btn:hover {
+            background-color: #e65c00; /* 호버 시 약간 진하게 */
+        }
         
-        .cta-button:active { transform: scale(0.96); }
+        .district-btn:active {
+            transform: scale(0.98); /* 클릭 시 살짝 눌리는 효과 */
+        }
+
     </style>
 </head>
 <body>
@@ -65,12 +80,25 @@
         <img src="./01.jpg" alt="와글와글 기도회 안내" class="content-img">
         <img src="./02.jpg" alt="와글와글 기도회 안내2" class="content-img">
         
+        <div class="link-section">
+            <span class="section-title">👇 소속된 교구를 선택해 주세요</span>
+            
+            <div class="link-grid">
+                <a href="#" class="district-btn" target="_blank">1교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">2교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">3교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">4교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">5교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">6교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">7교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">8교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">9교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">10교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">11교구 입장</a>
+                <a href="#" class="district-btn" target="_blank">12교구 입장</a>
+            </div>
         </div>
 
-    <div class="floating-btn-wrapper">
-        <a href="https://us06web.zoom.us/j/8309202026?pwd=ePsNacfQen1VHyvAQXac33TITlhrN7.1" class="cta-button" target="_blank">
-            기도회 입장하기
-        </a>
     </div>
 
 </body>
